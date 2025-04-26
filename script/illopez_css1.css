@@ -1,0 +1,214 @@
+body{
+    margin-top: 0px;
+}
+
+.arriba {
+    color: white;
+    border-radius: 40px;
+    background-color: rgb(122, 191, 233);
+    padding: 20px 26px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all .4s ease;
+    z-index: 99;
+}
+.arriba:visited{
+    color: rgb(246, 246, 247);
+}
+.arriba:hover {
+    transform: translateY(-7px);
+    color: rgb(162, 182, 255);
+}
+
+.cabecera{
+    display: flex;
+}
+.cabecera img{
+    width: 10%;
+}
+.cabecera nav{
+    width: 60%;
+    margin-left: 30%;
+    background-color: rgb(195, 207, 250);
+}
+.cabecera li{
+    font-size: 1.3em;
+    list-style: none;
+    display: inline-block;
+    margin: 3%;
+}
+.cabecera a:hover{
+    color: rgb(30, 186, 226);
+}
+.cabecera a:active{
+    color: rgb(133, 123, 223);
+}
+.cabecera a:focus{
+    color: rgb(201, 123, 223);
+}
+.cabecera a:visited{
+    border:2px solid rgb(114, 116, 250);
+}
+
+p:lang(es) > q {
+    quotes: "« " " »";
+}
+
+h3{
+    width:95vw;
+    padding: 20px;
+    background-color: rgb(195, 207, 250);
+    border-style: double;
+    color: rgb(28, 97, 138);
+    text-align: center;
+    font-size: xx-large;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.listaN li{
+    list-style: none;
+}
+.listaN li::before{
+    content: "🞜";
+}
+
+.modulo{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.modulo::selection{
+    background-color: rgb(203, 172, 231);
+    color: rgb(61, 64, 237);
+} 
+
+.enlaces{
+    width: 95vw;
+    padding: 18px;
+    background-color: rgb(195, 207, 250);
+    border-style: groove;
+    font-size: 20px;
+}
+.enlaces a{
+    margin: 1%;
+}
+.enlaces a:hover{
+    color: rgb(186, 137, 216);
+}
+.enlaces a:link{
+    text-decoration:none;
+    border: 2px rgb(184, 127, 237) dashed;
+}
+
+h1::first-letter{
+    color: rgb(106, 106, 238);
+    font-size: 30px;
+}
+
+h1::selection{
+    background-color: rgb(22, 72, 92);
+    color: rgb(181, 168, 222);
+}
+
+h2::first-line{
+    color: rgb(150, 183, 235);
+    font-family: Regular;
+}
+
+p::after{
+    content: ".";
+}
+
+dt::before{
+    content:"🞛";
+    margin-left:2%;
+}
+
+.multimedia{
+    padding: 4%;
+}
+.imagen1{
+    width: 60%;
+    filter:opacity(80%);
+}
+.imagen2{
+    width: 60%;
+    filter: saturate(3) hue-rotate(75deg);
+}
+
+h5{
+    font-size: 20px;
+    font-family: Circus;
+    width: 40%;
+    border: 3px rgb(190, 110, 230) double;
+    color: rgb(115, 128, 230);
+}
+.imagenes{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+.foto{
+    position: absolute;
+    top:20px;
+    left: 30px;
+    width: 200px;
+    height: 200px;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+}
+.lado2{
+    transform: rotateY(180deg) ;
+}
+.imagenes:hover .lado1{
+    transform: rotateY(-180deg) ;
+}
+.imagenes:hover .lado2{
+    transform: rotateY(0deg);
+}
+.final {
+    color: rgb(7, 12, 49);
+    text-align: right;
+    padding: 20px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    border: 3px outset rgb(0, 128, 126);
+    background: url("https://tse3.mm.bing.net/th?id=OIP.k8mLrev5qVOrrjUUB9sGcAHaEK&pid=Api&P=0&h=180")
+    repeat-x;
+    background-size: cover;
+    outline: 5px inset rgb(94, 122, 201);
+    border-radius: 25px 25px; 
+    animation: animacionfinal 10s ease-in 0.4s infinite forwards running alternate; 
+  }
+
+  @keyframes animacionfinal{
+    0%{
+        width: 20%;
+       transform: scale(1.0);
+       font-size: small;
+       font-style: initial;
+       color: #0a0430;
+     }
+     40%{
+        width: 40%;
+       transform: scale(1.0);
+       font-size: medium;
+       font-style: unset;
+       color: #1e126b;
+     }
+     78%{
+        width: 60%;
+       transform: scale(1.0);
+       font-size: large;
+       font-style: italic;
+       color: #341648;
+     }
+     98%{
+        width: 95%;
+       transform: scale(1.0);
+       font-size: x-large;
+       font-style: normal;
+     }
+
+  }

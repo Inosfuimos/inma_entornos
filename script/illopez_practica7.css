@@ -1,0 +1,86 @@
+
+
+table{
+    width: 70%;
+    
+}
+
+form{
+    width: 70%;
+    margin-left: 25%;
+
+}
+
+input{
+background-color: rgb(232, 222, 185);
+width: 35%;
+}
+
+h1{
+border: 5px outset rgb(232, 199, 16);
+width: 70%;
+margin-left: 15%;
+text-align: center;
+color: rgb(157, 120, 11);
+font-size: 50px;
+border-radius: 30px;
+padding: 20px 10px;
+text-shadow: 2px 3px 4px rgb(182, 176, 56);
+}
+
+.clase1{
+    background-color: rgb(253, 253, 133);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    color:rgb(125, 85, 10);
+    text-shadow: 3px 2px 4px rgb(191, 223, 47);
+
+}
+
+.clase2{
+    background-color: rgb(239, 241, 152);
+    width: 20%;
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.clase3{
+color: rgb(105, 131, 11);
+border-color: rgb(224, 217, 15);
+border-style: outset;
+width: 70%;
+font-weight: bold;
+}
+
+.clase4{
+    color:rgb(150, 130, 4);
+    border: 5px;
+    border-color: rgb(116, 114, 7);
+    border-style: groove;
+
+}
+
+a{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:large;
+    display:inline;
+    width: 8%;
+    font-weight: 400;
+    background-color:rgb(231, 237, 191);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin:15px 13px;
+    color: rgb(128, 79, 6);
+}
+
+h2{
+color: rgb(128, 128, 164);
+background-color: darkkhaki;
+width: 30%;
+}
+
+option{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+}

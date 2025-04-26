@@ -1,0 +1,314 @@
+
+body{
+    background-image:url(../imagenes/Background03.jpg);
+    background-size: cover;
+}
+
+nav{
+    background-color: #a98dcd;
+    margin: 12px;
+    color: white;
+}
+
+ul{
+    list-style-type:none;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+}
+
+li{
+    padding: 20px;
+    display: inline-block;
+}
+
+a{
+    text-decoration:none;
+    color:white;    
+}
+
+a:hover{
+    background-color: #4361a7;
+}
+
+h1 {
+    background: url("https://img.freepik.com/vector-gratis/banner-abstracto-diseno-comunicaciones-red-plexo-baja-poli_1048-12914.jpg?size=626&ext=jpg&ga=GA1.1.1943752326.1701586422&semt=ais") repeat;
+    background-size: cover;
+    width: 70%;
+    border: 5px rgba(72, 162, 210, 0.567) solid;
+    color:rgb(16, 1, 27);
+    padding: 20px;
+    margin-left: 15%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.daw {
+    background: url("https://tse4.mm.bing.net/th?id=OIP.dfITnaXR0cbh8ubsR6mzNAHaHa&pid=Api&P=0&h=180") repeat;
+    background-size: cover;
+    width: 70%;
+    border: 5px rgba(72, 162, 210, 0.567) solid;
+    color:rgb(16, 1, 27);
+    padding: 20px;
+    margin-left: 15%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+h2{
+    margin-top: 1%;
+    background-image: url("https://tse3.mm.bing.net/th?id=OIP.ys2GJdboDUerEkO7Fx0DXAHaDx&pid=Api&P=0&h=180");
+    text-align: center;
+    font-size:large;
+    width: 20%;
+    color: rgb(185, 231, 216);
+    border: 5px rgb(141, 174, 216) outset;
+}
+
+.fotos{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    perspective: 100%;
+}
+.foto{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    backface-visibility: hidden;
+    transition: transform 0.8s;
+}
+.foto2{
+    transform: rotateY(180deg) ;
+}
+.fotos:hover .foto1{
+    transform: rotateY(-180deg);
+}
+.fotos:hover .foto2{
+    transform: rotateY(0deg);
+}
+h3{
+    text-align: center;
+    font-size:medium;
+    width: 20%;
+    border: 4px rgb(56, 56, 174) inset;
+}
+
+.texto1{
+    color: #0b0b6f;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: url(../imagenes/fondotodo.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 5px;
+    border-style:double;
+}
+
+h4{
+    background-image: url("https://tse3.mm.bing.net/th?id=OIP.ys2GJdboDUerEkO7Fx0DXAHaDx&pid=Api&P=0&h=180");
+    text-align: center;
+    color: rgb(185, 231, 216);
+    font-size:large;
+    width: 23%;
+    border: 4px rgb(117, 56, 174) outset;
+}
+
+.texto2{
+    color: #0a0c4f;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: url("https://tse1.explicit.bing.net/th?id=OIP.bLEqW-OvmjIiqIOwi-wQSAHaE8&pid=Api&P=0&h=180") repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 4px;
+    border-style: dotted;
+}
+
+h5{
+    margin-left: 36%;
+    text-align: center;
+    font-size:medium;
+    width: 30%;
+    border: 4px rgb(58, 40, 128) inset;
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.aDucYpNGaaI-sT6inrS0SAHaFy&pid=Api&P=0&h=180");
+}
+
+.cont-imagenes{
+    perspective: 1000px;
+    width: 250px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin-left: 40%;
+
+}
+
+.img{
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 4s ease-in-out;
+}
+
+.cont-imagenes:hover .img{
+    transform: rotateY(180deg);
+}
+
+.cara{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.cara1{
+    transform: rotateY(0deg);
+}
+
+.cara2{
+    transform: rotateY(180deg);
+}
+
+h6{    
+    text-align: center;
+    font-size:smaller;
+    margin-left: 39%;
+    width: 19%;
+    border: 4px rgb(88, 165, 219) ridge;
+    border: 15px solid rgb(147, 29, 29);
+    border-image-slice: 80;
+    border-image-outset: 0px;
+    border-image-source: url('../imagenes/imagenborde.jpg');
+    border-image-repeat: repeat;
+}
+
+iframe{
+    margin-left: 39%;
+    justify-content: center;
+}
+
+.h7{
+    margin-top: 9;
+    margin-left: 35%;
+    text-align: center;
+    font-size:x-large;
+    border: 3px rgb(13, 60, 93) ridge;
+}
+
+table{
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+td{
+    border: 1px solid #462626;
+    padding: 8px;
+    text-align: left;
+}
+
+
+.filtros{
+    max-width: 80%; 
+    height: auto;   
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0,1);
+}
+
+.img1{
+    filter: blur(1.2px);
+
+}
+.filtro1 {
+    border: 2px solid #3498db;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.5);
+}
+
+.img2{
+    filter: contrast(2.4);
+}
+.filtro2 {
+    border: 2px solid #e74c3c;
+    box-shadow: 0 4px 8px rgba(231, 76, 60, 0.5);
+}
+
+.img3{
+    filter:saturate(20%);
+}
+.filtro3 {
+    border: 2px solid #2ecc71;
+    box-shadow: 0 4px 8px rgba(46, 204, 113, 0.5);
+}
+
+.img4{
+    filter: sepia(80%);
+
+}
+.filtro4 {
+    border: 2px solid #f39c12;
+    box-shadow: 0 4px 8px rgba(243, 156, 18, 0.5);   
+}
+
+
+.final{ 
+    margin-top: 5%;
+    text-align: center;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(12, 16, 49);
+    text-align: right;
+    padding: 20px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    border: 4px outset rgb(232, 145, 220);
+    background: url("https://tse3.mm.bing.net/th?id=OIF.5NbbGouvXMEFn%2fC3KrvOHg&pid=Api&P=0&h=180")
+    repeat-x;
+    background-size: cover;
+    outline: 5px ridge rgb(152, 48, 243);
+    border-radius: 25px 25px; 
+    animation: animacionfinal 10s ease-in 0.4s infinite forwards running alternate; 
+  }
+
+  @keyframes animacionfinal{
+    0%{
+        width: 20%;
+       transform: scale(1.0);
+       font-size: small;
+       font-style: initial;
+       color: #8a9ef8;
+     }
+    30%{
+        width: 40%;
+       transform: scale(1.0);
+       font-size: medium;
+       font-style: italic;
+       color: #7b6dd4;
+     }
+    68%{
+        width: 60%;
+       transform: scale(1.0);
+       font-size: large;
+       font-style: italic;
+       color: #4361a7;
+     }
+    78%{
+        width: 70%;
+       transform: scale(1.0);
+       font-size: x-large;
+       font-style: italic;
+       color: #3a3462;
+    }
+    95%{
+        width: 86%;
+        transform: scale(1.0);
+        font-size: x-large;
+        font-style: oblique;
+        color:#100b34;
+    }
+
+  }
