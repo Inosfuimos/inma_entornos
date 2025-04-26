@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="illopez">
+        <title>Formulario</title>
+        <link rel="stylesheet" type="text/css" href="./script/illopez_practica7.css"/>
+    </head>
+    <body>
+
+        <header>
+            <h1>Formulario</h1>
+        </header>
+        
+        <nav>
+            <ul>
+            <a href="./index.html">Volver a inicio</a>
+            </ul>
+        </nav>
+        <form action="formulario.php" method="post">
+            <table width=700 border="2" style="border-color: rgb(240, 60, 60); background-color: beige;">
+                <tr>
+                    <th class="clase1">Rellene</th>
+                    <th class="clase1">este</th>
+                    <th class="clase1">formulario</th>
+                </tr>
+                <th class=clase4 colspan="2">Introducir una edad entre 16 y 40</th>
+                    <tr>
+                        <td>
+                            <label for="edad">Edad</label>
+                            <input type="number" name="edad" min="16" max="40" value="18" placeholder="Introduce tu edad" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Edad del alumno:</td>
+                        <td colspan="2">
+                            <p class="clase2"><label><input type="checkbox" name="edad1" value="16">16 Años</label></p>
+                            <p class="clase2"><label><input type="checkbox" name="edad1" value="17">17 Años</label></p>
+                            <p class="clase2"><label><input type="checkbox" name="edad1" value="18">18 Años</label></p>
+                            <p class="clase2"><label><input type="checkbox" name="edad1" value="19" checked>19 Años</label></p>
+                            <p class="clase2"><label><input type="checkbox" name="edad1" value="20">20 Años</label></p>
+                        </td>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <fieldset class="clase3">   
+                                <legend>Indica que mascota tienes en casa:</legend>
+                                <div style="display: flex; justify-content: space-between;">
+                                <label><input type="radio" name="mascosta" value="perro">Perro</label>
+                                <label><input type="radio" name="mascosta" value="gato"checked>Gato</label>
+                                <label><input type="radio" name="mascosta" value="roedor">Roedor</label>
+                                </div>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <legend style="border:4px rgb(240, 131, 131) ridge">Selecciona un deporte</legend>
+                            <select id="deporte">
+                                <option>Fútbol</option>
+                                <option>Fútbol Sala</option>
+                                <option>Básquetbol</option>
+                                <option>Hockey</option>
+                                <option>Tenis</option>
+                                <option>Pilota Valenciana</option>
+                            </select>
+                        </td>
+                        <td colspan="2">
+                            Introduce tu email: <input type="email" name="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" placeholder="Dime tu email">
+                            <input type="submit" value="Enviar">
+                        </td>            
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="archivo">Fichero PDF</label>
+                            <input type="file" name="archivo" accept=".pdf"/>
+                        </td>
+                        <td>
+                            <label for="imagen">Fichero Imágenes</label>
+                            <input type="file" name="image" id="imagen" accept="image/*,image/png"/>
+                        </td>
+                        <td>
+                            Escribe tu DNI:
+                            <label for="DNI"></label>
+                            <input type="text" pattern="[A-Z]{9}[0-9]{1}" id="DNI" name="DNI" placeholder="9 números y 1 letra">
+                        </td>
+                    </tr>
+
+                    <tr>
+                            <td colspan="2"></td>
+                        <td>   
+                            <legend>Sugerencia Personal</legend>
+                            <textarea placeholder="Algún comentario que quieras escribir" rows="5" cols="40" spellcheck="true"></textarea>
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                           <button type="submit">
+                            <img src="imagenes/enviar.png" width="50" height="50"></img>
+                           </button>
+                           <button type="reset">
+                            <img src="imagenes/borrar.png" width="40" height="40">
+                           </button> 
+                        </td>
+                    </tr>
+            </table>
+        </form>
+
+    </body>
+</html>
