@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.2">
+        <meta name="author" content="illopez">
+        <title>Propiedades avanzadas</title>
+        <link rel="stylesheet" type="text/css" href="./script/illopez_css5.css"/>
+    </head>
+    <style>
+html,body {height:100%}
+@font-face {
+    font-family:letra2;
+    src: url(fuente/letra2.ttf);
+}
+@font-face {
+    font-family:MerryStar;
+    src: url(fuente/MerryStar.ttf);
+}
+@font-face {
+    font-family:letra1;
+    src: url(fuente/letra1.ttf);
+}
+@font-face{
+    font-family: letra3;
+    src: url(fuente/letra3.otf);
+}
+</style>
+
+
+<header>
+    <h2>Tabla-Formulario Ejercicio 5</h2>
+</header>
+
+<nav>
+    <ul>
+    <a class="clas1" href="./illopez_css1.html">Volver atrás</a>
+    <a class="clas1" href="./index.html">Volver a inicio</a>
+    
+
+    </ul>
+</nav>
+
+<form  method="post">
+        <fieldset class="clase1">
+            <legend class="clase01">PARTE 6- EXAMEN PRACTICO </legend>
+            <h1>TABLA- FORMULARIO DEL EXAMEN</h1>
+            <table>
+                <tr>
+                    <th class="claseAN21">COMPLETE</th>
+                    <th class="claseAN22">FORMULARIO</th>
+                    <th class="clase2">EXAMEN</th>
+                </tr>
+                <th class="clase3" colspan="2">TABLAS</th>
+                <th class="clase3">FORMULARIOS</th>
+                <tr>
+                    <td colspan="3" class="clase31">FORMULARIO PERSONAL DEL ALUMNO</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="nombre">Nombre Alumno</label>
+                        <input type="text" name="nombre" placeholder="Introduce tu nombre en mayusculas" pattern="[A-Z]{1,30}" required>
+                    </td>
+                    <td>TIENES QUE ESCRIBIR EN MAYUSCULA Y TIENES UN MAXIMO DE 30 CARACTERES</td>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <label for="apellido">Apellidos:</label>
+                        <input type="text" name="apellido" placeholder="Máximo de 40 caracteres" maxlength="40" required>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="correo">Correo electrónicp (formato válido):</label>
+                        <input type="email" name="correo" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2}" placeholder="Ej:ususario@iesgadea.es" required>
+                    </td>
+
+                    <td class="clase4">Recuerda: Los correos tienen que ser válidos para poder validarlos  
+                    </td>
+                </tr>
+                <td colspan="1" class="ancho">
+                        <label for="fecha">Fecha de nacimiento</label>
+                        <input type="date" name="fecha" placeholder="introduce tu dia de nacimiento" required>
+                </td>
+                <td colspan="2">
+                    <legend class="clase5">Formación Actual:</legend>
+                    <p><label><input type="radio" name="option" value="Basico">Básicos (sin titulación)</label></p>
+                    <p><label><input type="radio" name="option" value="Eso">E.S.O/FP BÁSICA</label></p>
+                    <p><label><input type="radio" name="option" value="medio" >GRADO MEDIO</label></p>
+                    <p><label><input type="radio" name="option" value="superior">GRADO SUPERIOR</label></p>
+                    <p><label><input type="radio" name="option" value="universidad">Universitario</label></p>
+                </td>
+                <tr>
+                    <td colspan="1" class="clase71" class="ancho1">
+                        <fieldset>
+                            <legend class="aficion" for="aficion">AFICIONES</legend>
+                            <div>
+                                <p><label>DEPORTE</label>
+                                <input type="text" name="aficion"></p>
+                            </div>
+                        </fieldset>
+                    </td>
+                    <td colspan="1" class="clase6" class="ancho2">
+                        <legend>Elige un deporte en el desplegable a tu izquierda o a tu derecha</legend>
+
+                    </td>                              
+                    <td colspan="1" class="clase7">                    
+                        <legend style="background-color: rgb(232, 93, 93); width: 40%;">AFICIONES</legend>
+                        <label class="clase7"><input type="checkbox" name="deporte" value="futbol">Fútbol</label>
+                        <label class="clase7"><input type="checkbox" name="deporte" value="sala">Fútbol Sala</label>
+                        <label class="clase7"><input type="checkbox" name="deporte" value="baloncesto">Baloncesto</label>
+                        <label class="clase7"><input type="checkbox" name="deporte" value="hockey" checked>Hockey</label>
+                        <label class="clase7"><input type="checkbox" name="deporte" value="Tenis">Tenis</label>
+                        <label class="clase7"><input type="checkbox" name="deporte" value="rugby">Rugby</label>
+                        
+                </tr>
+                <tr>
+                    <td colspan="2" class="ancho2">
+                        <fieldset>
+                        <legend class="clase8">SUBIR FICHEROS ADICIONALES</legend>
+                        <div style="display: flex; justify-content: space-between;" >
+                        </div>
+                        </fieldset>
+                            <label for="archivo">CURRICULUM VITAE (PDF)</label>
+                            <input type="file" name="archivo" accept=".pdf"/>
+                    </td>
+                    <td colspan="1">
+                        <fieldset>
+                            <legend class="clase8">SUBIR FICHEROS ADICIONALES</legend>
+                            <div style="display: flex; justify-content: space-between;" >
+                            </div>
+                            </fieldset>
+                        <label for="imagen">FOTO RECIENTE</label>
+                        <input type="file" name="image" id="imagen" accept="image/*,image/png"/>
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <th colspan="3" class="clase9">Observaciones
+                            <textarea placeholder="Algún comentario que quieras escribir" rows="6" cols="50" spellcheck="true"></textarea>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td colspan="1" class="ancho1">
+                        <button type="submit">
+                            <img src="./imagenes/enviar.png" width="50" height="50">Enviar</img>
+                        </button>
+                    </td>
+
+                    <td colspan="2" class="ancho2">
+                        <button type="reset">
+                            <img src="./imagenes/borrar.png" width="40" height="40">Borrar</img>
+                        </button> 
+                    </td>
+                    
+                    <td colspan="1">
+                        <img src="imagenes/IES-Gadea-LOGO.png" width="80" height="70"><a href="./index.html"> Regresar Menu</a>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>    
+</form>
+
+</body>
+</html>
